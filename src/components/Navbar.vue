@@ -4,7 +4,7 @@
     <ul class="nav__list">
       <li class="nav__item">Все товары</li>
       <li class="nav__item">
-        <a href="#">Одежда</a>
+        <a class="nav__link" href="#">Одежда</a>
         <ul class="nav__list--dropdown">
           <li class="dropdown-list__item">Вся одежда</li>
           <li class="dropdown-list__item">Худи и свитшоты</li>
@@ -18,7 +18,7 @@
         </ul>
       </li>
       <li class="nav__item">
-        <a href="">Аксессуары</a>
+        <a class="nav__link" href="">Аксессуары</a>
         <ul class="nav__list--dropdown">
           <li class="dropdown-list__item">Все аксессуары</li>
           <li class="dropdown-list__item">Рюкзак Born To Be 3.2</li>

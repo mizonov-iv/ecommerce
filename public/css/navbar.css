@@ -32,6 +32,10 @@
     color: #707070;
 }
 
+.nav__link {
+
+}
+
 .nav__list--dropdown {
     width: 230px;
     position: absolute;
@@ -40,6 +44,10 @@
     left: 0;
     top: 100%;
     box-shadow: 0 5px 15px 0 rgba(0,0,0, 0.2);
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    color: black;
 }
 
 .dropdown-list__item {
@@ -74,4 +82,12 @@
 
 .nav__about-brand:hover {
     color: #707070;
+}
+
+@media (min-width: 769px) {
+    .nav__item:hover .nav__list--dropdown {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s;
+    }
 }
