@@ -1,0 +1,93 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+}
+
+.nav__logo {
+    width: 58px;
+    height: 40px;
+    background-image: url("../icons/logo.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.nav__list {
+    display: flex;
+    margin: 0;
+}
+
+.nav__item {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav__item:hover {
+    color: #707070;
+}
+
+.nav__link {
+
+}
+
+.nav__list--dropdown {
+    width: 230px;
+    position: absolute;
+    padding: 10px;
+    background-color: #ffffff;
+    left: 0;
+    top: 100%;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0, 0.2);
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    color: black;
+}
+
+.dropdown-list__item {
+    margin: 10px;
+}
+
+.nav__about {
+    display: flex;
+}
+.nav__about-wrap {
+    display: flex;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav__about-wrap:hover {
+    color: #707070;
+}
+
+.nav__pin {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url("../icons/pin.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav__about-brand {
+    cursor: pointer;
+}
+
+.nav__about-brand:hover {
+    color: #707070;
+}
+
+@media (min-width: 769px) {
+    .nav__item:hover .nav__list--dropdown {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+}
