@@ -1,5 +1,8 @@
 <template>
   <nav class="container nav">
+    <div class="burger">
+      <span></span>
+    </div>
     <div class="nav__logo"></div>
     <ul class="nav__list">
       <li class="nav__item">Все товары</li>
@@ -40,6 +43,9 @@
       <p class="nav__about-brand">О бренде</p>
     </div>
   </nav>
+  <div class="search">
+
+  </div>
 </template>
 
 <script>
